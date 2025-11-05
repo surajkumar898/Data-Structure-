@@ -1,0 +1,2 @@
+linked list is one of the implementation class of list interface. what is list interface, it is part of the java.util package. it is represent the ordered collection where element can be inserted, accessed and removing
+using an index, duplicates are allowed. list interface provide It provide methods like get(), set(), add(), remove(), and indexOf(). Elements are stored in insertion order. Elements can be accessed by index.
