@@ -1,0 +1,3 @@
+Linked list is the Linear Data structure. data structure is the way of organizing, storing and managing the data.it defines how data is stored in memory and it perform  operation like inserting, updating, deleting,
+ searching, traversal and sorting. Data structure are mainly divided into two two tyoe  primitive data type are  int, float, char,double,boolean. Non primivitive data type are array, Linked list, stack, ,queue  are linear 
+data strucrure.Non linear data structure  is the elements are stored in non sequentially. Tpes of non linear data structure are tree, graph, hash table.
