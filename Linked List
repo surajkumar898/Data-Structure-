@@ -1,2 +1,12 @@
 linked list is one of the implementation class of list interface. what is list interface, it is part of the java.util package. it is represent the ordered collection where element can be inserted, accessed and removing
-using an index, duplicates are allowed. list interface provide It provide methods like get(), set(), add(), remove(), and indexOf(). Elements are stored in insertion order. Elements can be accessed by index.
+using an index, duplicates are allowed. list interface provide methods like get(), set(), add(), remove(), and indexOf(). Elements are stored in insertion order. Elements can be accessed by index.
+Linked list stores the data in the form of nodes where in every node is connected to next and previous node. first node does not have previous node  information and last node
+does not have the next node information.
+Internal data structure is doubly linked list 
+Linked list implements marker interface like serizable, clonable but not random access. Marker interface does not contain any methods or fields 
+duplicates are allowed. Insertion order is preserved, insert order is the order in which elements are added into a collection 
+It has no initial capacity and no incremental capacity. Initial capacity of a collection means how many elements it can store before the new size of array creates.
+Incremental capacity, how much size of array increases when it becomes full. 
+Suituation to use linked list, linked list does not have any shift operation hence its suitable for insertion or removal of data in between linked list.
+Linked list is not suitable for any search and  retrieval operation.
+
