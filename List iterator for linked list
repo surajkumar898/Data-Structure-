@@ -1,3 +1,27 @@
 List iterator is the method of list interface. List iterator method is used to create the object of the list iterator. java.util.list.iterator. Method using in the liat iterator hasnext() It is used to check whether 
 the next element to be exist or not. if present true or else false. next(), it gives the element moves the cursor forward. has previous(), it is used to check whether prevoius element is accessed present or not, if present it 
 returns true or false. previous, it gives the previous element pointed by the cursor and moves the cursor backward.   
+package link;
+
+import java.util.*;
+
+public class traverse {
+
+	public static void main(String[] args) {
+		List <String> bag = new LinkedList<>();
+		bag.add("Java");
+		bag.add("Html");
+		bag.add("Css");
+		bag.add("JavaScript");
+	    ListIterator <String> iterator= bag.listIterator();
+		System.out.println("Forward direction");
+		while(iterator.hasNext()) {
+			System.out.println(iterator.next());	
+		}
+		System.out.println("Backward direction");
+       while(iterator.hasPrevious()) {
+    	   System.out.println(iterator.previous());
+       }
+	}
+
+}
