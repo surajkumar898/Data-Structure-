@@ -1,0 +1,6 @@
+We having two type of collection, non generic collection and generic collection. Non generic collection, it is the collection of hetrogenous object. Generic collection, it is the collection of homogenous object.
+if we use same data type of  values inside the parameter then we use generics, it is does not allow the different data type values.
+Whenever, we sorting the object based on one parameter, we will be using comparable function unit. comparable interface contain compare to function.
+Steps to sort the object using comparable 
+object should implement comparable then make it as generics.
+using comparator interface, it contain compareto(), to check to two parameter values which is small that is comes in first
