@@ -4,3 +4,36 @@ Whenever, we sorting the object based on one parameter, we will be using compara
 Steps to sort the object using comparable 
 object should implement comparable then make it as generics.
 using comparator interface, it contain compareto(), to check to two parameter values which is small that is comes in first
+package link;
+
+import java.util.*;
+
+public class Employee {
+    String name;
+    int salary;
+
+    // ✅ Constructor
+    public Employee(String name, int salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    // ✅ toString() for readable output
+    public String toString() {
+        return "Employee Name: " + name + ", Salary: " + salary;
+    }
+    
+    public int compare(Employee e1, Employee e2) {
+        return e2.salary - e1.salary;
+    }
+
+    public static void main(String[] args) {
+        // ✅ Create a list of employees
+        List<Employee> list = new ArrayList<>();
+        list.add(new Employee("Suraj", 200000));
+        list.add(new Employee("Kumar", 400000));
+        list.add(new Employee("Rahul", 300000));
+
+        System.out.println(list); 
+    }
+}
