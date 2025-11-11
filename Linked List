@@ -9,4 +9,33 @@ It has no initial capacity and no incremental capacity. Initial capacity of a co
 Incremental capacity, how much size of array increases when it becomes full. 
 Suituation to use linked list, linked list does not have any shift operation hence its suitable for insertion or removal of data in between linked list.
 Linked list is not suitable for any search and  retrieval operation.
+package link;
+import java.util.*;
+public class Linked {
+	public static void main(String[] args) {
+	 List <String>Youtube= new LinkedList<>();
+	 System.out.println("Add a new Song in a playlist" );
+	 Youtube.add("Without Me");
+	 Youtube.add("Superman");
+	 Youtube.add("Rap God");
+	 System.out.println("Play the Full Song");
+	 System.out.println(Youtube);
+	 System.out.println("Choose the song");
+	   int index1 = Youtube.indexOf("Superman");
+       int index2 = Youtube.indexOf("Without Me");
 
+       System.out.println("'Superman' is at position: " + index1);
+       System.out.println("'Without Me' is at position: " + index2);
+	ListIterator <String> iter= Youtube.listIterator();
+	System.out.println("Ordered");
+	while(iter.hasNext()) {
+		
+		System.out.println(iter.next());
+	 }
+	System.out.println("reverse");
+while(iter.hasPrevious()) {
+	System.out.println(iter.previous());
+}
+	}
+
+}
