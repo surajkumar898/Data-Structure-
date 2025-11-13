@@ -1,0 +1,35 @@
+It is the sub- Interface of collection interface. It is defined in Java.util.package. 
+Characterization of interface 
+Insertion order is not  mandate, Set does not allow duplicate element, we can add only one null values, Set does not have index. So we cannot add or remove the elements based an index we can iterate set only by using 
+for each loop and iterators method.
+It has three implementation class are 
+Hashset, Linked Hash Set, Treeset.
+Hashset
+It is the implementation class of set interface.
+Initial capacity of hashset is 60, Implementation capacity of hashset is current capacity *2.
+Hash set does not allow duplicate elements. 
+Insertion order is not maintain
+values are added based on hashcode.
+hetrogenous data is allowed.
+It accept only one null values. 
+It implements clonable and serizable marker interface.
+Example of Hashset
+import java.util.*;
+public class ListExample {
+    public static void main(String[] args) {
+        // Create a List of Strings using ArrayList
+        List<String> fruits = new ArrayList<>();
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Mango");
+        fruits.add("Banana"); // Duplicates allowed
+        System.out.println("Fruits: " + fruits);
+        System.out.println("First fruit: " + fruits.get(0));
+        fruits.remove("Banana");
+        System.out.println("\nAfter removal:");
+        for (String fruit : fruits) {
+            System.out.println(fruit);
+        }
+        System.out.println("\nTotal fruits: " + fruits.size());
+    }
+}
