@@ -15,21 +15,26 @@ It accept only one null values.
 It implements clonable and serizable marker interface.
 Example of Hashset
 import java.util.*;
-public class ListExample {
+
+public class SetExample {
     public static void main(String[] args) {
-        // Create a List of Strings using ArrayList
-        List<String> fruits = new ArrayList<>();
+
+        Set<String> fruits = new HashSet<>();
         fruits.add("Apple");
         fruits.add("Banana");
         fruits.add("Mango");
-        fruits.add("Banana"); // Duplicates allowed
-        System.out.println("Fruits: " + fruits);
-        System.out.println("First fruit: " + fruits.get(0));
+        fruits.add("Banana"); // Duplicate NOT added
+
+        System.out.println("Fruits: " + fruits); // Order not guaranteed
+
         fruits.remove("Banana");
+
         System.out.println("\nAfter removal:");
         for (String fruit : fruits) {
             System.out.println(fruit);
         }
+
         System.out.println("\nTotal fruits: " + fruits.size());
     }
 }
+
