@@ -1,0 +1,24 @@
+Same as well as the Hashmap methods
+Arranging the key value pair in ascending order 
+Hashmap is faster than the treemap
+null key is not allowed 
+It has additional method are first key(), last key(), higher key(), lower key().
+Firstkey() is smallest key(), lastkey() largest key,
+higehrkey() is the next greater key, 
+lowerkey() is the next smallest key ()
+
+Program 
+import java.util.*;
+Public class mapExample {
+Public static vod main(String [] args) {
+TreeMap<String, Integer> = new Treemap<>()
+tmap.put("zava", 40);
+tmap.put("Anna", 30);
+tmap.put("bob", 25);
+System.out.println(tmap.Containskey("Anna");
+System.out.println(tmap.get("bob");
+System.out.println(tmap.lastkey());
+System.out.println*tmap.firstkey());
+System.out.println(tmap.lowerkey());
+System.out.println(tmap.lowerkey());
+System.out.println(tmap.firstkey());
