@@ -1,0 +1,14 @@
+Put() method is used in java to insert or update key value pair.
+Contains Key() method is used to check whether a specific key exist in the map or not.
+get() method in Java, Maps is used to retrieve the value of a given key
+Program
+import java.util.*;
+Public class data {
+public static void main(String [] args) {
+Map<String, Integer> emp1= new HashMap<>();
+emp.put("Rahul", 50000);
+emp.put("Anj" , 60000);
+emp.put("Ravi", 450000);
+System.out.println(emp.get("Anj");
+System.out.println(emp.containskey("ravi);
+System.out.println(emp);
