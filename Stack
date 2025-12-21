@@ -1,0 +1,49 @@
+Stack, Store the data in the form of array of object.
+Good for searching and fetching the data. bad for inserting and deleting the data.
+Stack follows fifo principle which is element that is added at last and removing at first.
+duplicates and multiple nulll values are allowed. 
+
+Stack has four methods 
+pop()- delete the element and return element
+push() - add the element
+peek() - print the top element
+isEmpty() - check values in the stack
+
+
+import java.util.Stack;
+
+class Employee {
+    String name;
+    int salary;
+
+    Employee(String name, int salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return name + " - " + salary;
+    }
+}
+
+public class StackDemo {
+    public static void main(String[] args) {
+
+        Stack<Employee> info = new Stack<>();
+
+        System.out.println("Employee Stack:");
+
+        info.push(new Employee("Suraj", 50000));
+        info.push(new Employee("Kumar", 25000));
+        info.push(new Employee("SK", 15000));
+
+        System.out.println("Top Employee: " + info.peek());
+
+        while (!info.isEmpty()) {
+            System.out.println(info.pop());
+        }
+    }
+}
+
+
